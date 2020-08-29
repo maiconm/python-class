@@ -1,0 +1,13 @@
+nome = input('Digite seu nome: ')
+sobrenome = input('Digite seu sobrenome: ')
+endereco = input('Digite seu endereco: ')
+cep = input('Digite seu cep: ')
+cidade = input('Digite seu cidade: ')
+telefone = input('Digite seu telefone: ')
+
+print('nome %s' % nome)
+print('sobrenome %s' % sobrenome)
+print('endereco %s' % endereco)
+print('cep %s' % cep)
+print('cidade %s' % cidade)
+print('telefone %s' % telefone)
