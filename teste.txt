@@ -1,0 +1,5 @@
+Primeiro teste com arquivo
+Conteudo de variaveis tambem podem ser salvas
+linguagem = Python
+numero = 5.89
+Mais dados, agora ao final do arquivo

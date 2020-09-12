@@ -126,6 +126,7 @@ print(8 == 10 and 5 == 7)
 print(not (1 == 1))
 
 # if e else
+print('-------')
 k = 20
 w = 20
 
@@ -137,10 +138,127 @@ else:
     print('nao eh maior nem menor.')
 
 # for
-
+print('-------')
 times = ['Parana', 'Coritiba', 'Atletico']
 
 for time in times:
     print('%s eh um time de Curitiba' % (time))
 
+# Revisao 9/11/2020
+print('-------')
+times = ['Parana', 'Coritiba', 'Athletico']
 
+for time in times:
+    print('%s eh um time de Curitiba' % time)
+
+# Aula 2
+print('-------')
+numeros = range(1, 11)
+
+for n in numeros:
+    print(n)
+print('-------')
+for n in range(20, 31):
+    print(n)
+
+print('-------')
+
+i = 1
+
+while i <= 5:
+    print(i)
+    i += 1
+
+print('-------')
+i = 1
+
+while True:
+    print(i)
+    i += 1
+
+    if i == 5:
+        break
+
+print('-------')
+
+max = 10
+i = 1
+
+while i <= max:
+    if (i % 2) != 0:
+        i += 1
+        continue
+    print('%d eh um numero par' % i)
+    i += 1
+
+print('-------')
+total_geral = 0
+
+def conta_vogais(p):
+    global total_geral
+    total = 0
+    for l in p.lower():
+        if l == 'a' or l == 'e' or l == 'i' or l == 'o' or l == 'u':
+            total += 1
+
+    total += total
+    return total
+
+
+cor = 'amarelo'
+nome = 'Maria'
+print(cor)
+print(nome)
+print('%s tem %d vogais' % (cor, conta_vogais(cor)))
+print('%s tem %d vogais' % (nome, conta_vogais(nome)))
+print('%d total geral de vogais' % total_geral)
+print('-------')
+arq_windows = 'C:\\User\\data\\testes\\tmp'
+print(arq_windows)
+print('-------')
+
+file = open('teste.txt', 'w')
+file.write('Primeiro teste com arquivo\n')
+file.write('Conteudo de variaveis tambem podem ser salvas\n')
+numero = 5.89
+linguagem = 'Python'
+file.write('linguagem = %s\n' % linguagem)
+file.write('numero = %.2f\n' % numero)
+file.close()
+print('-------')
+file = open('teste.txt', 'a')
+file.write('Mais dados, agora ao final do arquivo\n')
+file.close()
+print('-------')
+file = open('teste.txt')
+linhas = file.readlines()
+file.close()
+
+for linha in linhas:
+    linha = linha.replace('\n', '')
+    print(linha)
+print('-------')
+
+from time import strftime
+print(strftime('%Y-%m-%d %H:%M'))
+
+print('-------')
+print(strftime('%I'))
+print(strftime('%d'))
+print(strftime('%m'))
+print(strftime('%H'))
+print('-------')
+import time
+from datetime import datetime
+agora = datetime.now()
+print(agora)
+time.sleep(2)
+depois = datetime.now()
+print(depois)
+diferenca = depois - agora
+print(diferenca.total_seconds())
+print('-------')
+print('executando')
+import sys
+sys.exit(0)
+print('nao pode mostrar esse print')
